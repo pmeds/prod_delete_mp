@@ -22,7 +22,7 @@ chmod 754 prod_mp_delete_validation.py
 
     stage('Delete Rules') {
       steps {
-        echo 'checking if there is a csv file for games'
+        echo 'Start Delete validation'
         script {
           if (fileExists('delete-prod-test-upload.csv')) {
             sh 'echo "uploading games rules"'
