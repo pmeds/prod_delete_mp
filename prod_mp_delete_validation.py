@@ -36,7 +36,7 @@ def main():
         reader = csv.DictReader(csvfile)
         rows = list(reader)  # Convert iterator to list to reuse it
 
-    num_threads = 2  # Define the number of threads you want to use
+    num_threads = 3  # Define the number of threads you want to use
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
         futures = [executor.submit(process_url, row) for row in rows]
