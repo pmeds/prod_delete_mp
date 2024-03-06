@@ -39,7 +39,7 @@ chmod 754 prod_mp_delete_validation.py
         script {
           if (fileExists('delete-prod-test-upload.csv')) {
             sh 'echo "testing uploaded general rules"'
-            sh 'python3 staging_delete_validation.py delete-prod-test-upload.csv'
+            sh 'python3 prod_mp_delete_validation.py delete-prod-test-upload.csv'
           }
         }
 
