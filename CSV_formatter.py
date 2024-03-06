@@ -3,7 +3,7 @@ import hashlib
 import csv
 
 # Master file with all the rules
-filename = "test-delete3.xlsx"
+filename = "test-uploader2.xlsx"
 #print(filename)
 
 # Output CSV file name
