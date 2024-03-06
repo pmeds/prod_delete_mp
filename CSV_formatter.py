@@ -4,7 +4,7 @@ import csv
 
 # Master file with all the rules
 filename = "test-delete3.xlsx"
-print(filename)
+#print(filename)
 
 # Output CSV file name
 output_csv = "delete-prod-test-upload.csv"
